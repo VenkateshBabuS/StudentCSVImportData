@@ -1,0 +1,3 @@
+ExternalStudentID,FirstName,LastName,DOB,SSN,Address,City,State,Email,MaritalStatus
+1,Suresh,Babu,10-02-1956,56789876,Test address,Bangalore,Karnataka,mahesh@gmail.com,Unmarried
+2,mahesh,kumar,15-10-2016,876546,address,mysore,karnataka,kumar@gmail.com,married
