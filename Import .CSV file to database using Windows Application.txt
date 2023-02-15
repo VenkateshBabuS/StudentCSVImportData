@@ -50,7 +50,7 @@ namespace Student
                         }
                         foreach (DataGridViewRow row in dgItems.Rows)
                         {
-                            if (Convert.ToString(row.Cells["extrenalstudentid"].Value) == "" || row.Cells["externalstudentid"].Value == null 
+                            if (Convert.ToString(row.Cells["externalstudentid"].Value) == "" || row.Cells["externalstudentid"].Value == null 
                                 || Convert.ToString(row.Cells["FirstName"].Value) == "" || row.Cells["FirstName"].Value == null
                                 || Convert.ToString(row.Cells["LastName"].Value) == "" || row.Cells["LastName"].Value == null
                                 || Convert.ToString(row.Cells["DOB"].Value) == "" || row.Cells["DOB"].Value == null
