@@ -36,7 +36,7 @@ namespace Student
                     {
                         DataTable dtNew = new DataTable();
                         dtNew = GetDataTabletFromCSVFile(dialog.FileName);
-                        if (Convert.ToString(dtNew.Columns[0]).ToLower() != "Externalstudentid")
+                        if (Convert.ToString(dtNew.Columns[0]).ToLower() != "externalstudentid")
                         {
                             MessageBox.Show("Invalid Items File");
                             Save.Enabled = false;
