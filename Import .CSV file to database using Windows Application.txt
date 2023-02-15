@@ -136,8 +136,8 @@ namespace Student
                 for (int i = 0; i < dgItems.Rows.Count - 1; i++)
                 {
                     conn.Open();
-                    cmd = new SqlCommand("Insert into student(externalstudentid,FirstName,LastName,DOB,SSN,Adddress,City,State,Email,MaritalStatus) values(@internalstudentid,@FirstName,@LastName,@DOB,@SSN,@Adddress,@City,@State,@Email,@MaritalStatus)", conn);
-                    cmd.Parameters.AddWithValue("@ExternalstudentID", dgItems.Rows[i].Cells[0].Value);
+                    cmd = new SqlCommand("Insert into student(externalstudentid,FirstName,LastName,DOB,SSN,Adddress,City,State,Email,MaritalStatus) values(@externalstudentid,@FirstName,@LastName,@DOB,@SSN,@Adddress,@City,@State,@Email,@MaritalStatus)", conn);
+                    cmd.Parameters.AddWithValue("@externalstudentid", dgItems.Rows[i].Cells[0].Value);
                     cmd.Parameters.AddWithValue("@FirstName", dgItems.Rows[i].Cells[1].Value.ToString());
                     cmd.Parameters.AddWithValue("@LastName", dgItems.Rows[i].Cells[2].Value.ToString());
                     cmd.Parameters.AddWithValue("@DOB", dgItems.Rows[i].Cells[3].Value.ToString());
