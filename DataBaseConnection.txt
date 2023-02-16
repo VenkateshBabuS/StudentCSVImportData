@@ -1,0 +1,17 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WindowsFormsApp2
+{
+    internal class dbconnection
+    {
+        public string GetConnection()
+        {
+            string conn = "Data Source=.;Initial Catalog=studentdata;Integrated Security=True";
+            return conn;
+        }
+    }
+}
